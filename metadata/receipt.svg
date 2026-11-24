@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240">
+  <rect width="400" height="240" rx="16" fill="#2d1450"/>
+  <text x="32" y="64" font-family="sans-serif" font-size="28" font-weight="700" fill="#ffffff">Recibo de pago</text>
+  <text x="32" y="104" font-family="sans-serif" font-size="16" fill="#c9b8f0">Proyecto: Pasarela Web3</text>
+  <text x="32" y="200" font-family="monospace" font-size="14" fill="#c9b8f0">Diplomatura Blockchain | UNLu</text>
+</svg>

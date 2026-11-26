@@ -16,3 +16,4 @@ contract VulnerableVault {
         require(ok, "transfer failed");
         balances[msg.sender] = 0; // 4. recién ahora pone el saldo en cero
     }
+}

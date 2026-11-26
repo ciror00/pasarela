@@ -10,10 +10,9 @@ contract VulnerableVault {
     }
 
     function withdraw() external {
-        uint256 amount = balances[msg.sender];
-        require(amount > 0, "nothing to withdraw");
-        (bool ok,) = msg.sender.call{value: amount}("");
+        uint256 amount = balances[msg.sender]; // 1. lee el saldo
+        require(amount > 0, "nothing to withdraw"); // 2. valida
+        (bool ok,) = msg.sender.call{value: amount}(""); // 3. ENVÍA el ETH
         require(ok, "transfer failed");
-        balances[msg.sender] = 0;
+        balances[msg.sender] = 0; // 4. recién ahora pone el saldo en cero
     }
-}
